@@ -5,11 +5,11 @@ import Sidebar from "../../Components/SideBar/Sidebar";
 const MainLayout = () => {
     return (
         <>
-            <div>
+            <div className="sticky top-0">
                 <Navbar></Navbar>
             </div>
-            <div className="flex flex-row">
-                <aside className="sticky top-14 overflow-auto min-w-[250px] max-w-[300px] basis-1/4">
+            <div className="flex">
+                <aside className="sticky top-14 min-w-[250px] max-w-[300px]  h-[calc(100vh-56px)] bg-blue-500 bg-opacity-50">
                     <Sidebar></Sidebar>
                 </aside>
                 <main className="my-8 basis-full">
